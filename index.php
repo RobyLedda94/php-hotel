@@ -1,5 +1,5 @@
 <?php
-    // array di array
+    // array associativo
     $hotels = [
 
         [
@@ -40,8 +40,13 @@
 
     ];
 
-    // con il var_damp stampo a video tutti i dati dell'array associativo
-    var_dump($hotels);
+    // con il var_damp stampo a video tutti i dati dell'array associativo hotels
+    // var_dump($hotels);
+    
+    // mostro i dati dell'array associativo a video con il ciclo for
+    foreach($hotels as $hotel){
+        var_dump($hotel);
+    }
 
 ?>
 
@@ -51,7 +56,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel</title>
+    <!-- link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Hotels</title>
 </head>
 <body>
     
