@@ -78,7 +78,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="content-main">
-                    <table class="table table-striped table-bordered">
+                    <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>Nome</th>
@@ -90,7 +90,17 @@
                         </thead>
                         <!-- nel tbody vado a ciclare l'array -->
                          <tbody>
-                            
+                            <!-- tag php con ciclo foreach -->
+                             <?php foreach($hotels as $hotel){ ?>
+                                <tr>
+                                    <!-- echo recupero il dato dall'array e lo mostro a video -->
+                                    <td><?php echo $hotel['name']; ?></td>
+                                    <td><?php echo $hotel['description']; ?></td>
+                                    <td><?php echo $hotel['parking']; ?></td>
+                                    <td><?php echo $hotel['vote']; ?></td>
+                                    <td><?php echo $hotel['distance_to_center']; ?></td>
+                                </tr>
+                             <?php } ?>
                          </tbody>
                     </table>
                     </div>
