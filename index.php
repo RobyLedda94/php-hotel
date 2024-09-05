@@ -44,9 +44,9 @@
     // var_dump($hotels);
     
     // mostro i dati dell'array associativo a video con il ciclo for
-    foreach($hotels as $hotel){
-        var_dump($hotel);
-    }
+    // foreach($hotels as $hotel){
+    //     var_dump($hotel);
+    // }
 
 ?>
 
@@ -61,6 +61,44 @@
     <title>Hotels</title>
 </head>
 <body>
+    <!-- struttura html -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content-header text-center">
+                        <h1>Tabella Hotels</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content-main">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Descrizione</th>
+                                <th>Parcheggio</th>
+                                <th>Voto</th>
+                                <th>Distanza dal centro</th>
+                            </tr>
+                        </thead>
+                        <!-- nel tbody vado a ciclare l'array -->
+                         <tbody>
+                            
+                         </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
     
 </body>
 </html>
