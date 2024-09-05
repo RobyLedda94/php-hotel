@@ -44,9 +44,9 @@
     // var_dump($hotels);
     
     // mostro i dati dell'array associativo a video con il ciclo for
-    // foreach($hotels as $hotel){
-    //     var_dump($hotel);
-    // }
+     foreach($hotels as $hotel){
+         var_dump($hotel);
+     }
 
 ?>
 
@@ -58,6 +58,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link a bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Hotels</title>
 </head>
 <body>
@@ -77,32 +78,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="content-main">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Descrizione</th>
-                                <th>Parcheggio</th>
-                                <th>Voto</th>
-                                <th>Distanza dal centro</th>
-                            </tr>
-                        </thead>
-                        <!-- nel tbody vado a ciclare l'array -->
-                         <tbody>
-                            <!-- tag php con ciclo foreach -->
-                             <?php foreach($hotels as $hotel){ ?>
+                    <div class="content-main table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Descrizione</th>
+                                    <th>Parcheggio</th>
+                                    <th>Voto</th>
+                                    <th>Distanza dal centro</th>
+                                </tr>
+                            </thead>
+                                    <!-- nel tbody vado a ciclare l'array -->
+                            <tbody>
+                                    <!-- tag php con ciclo foreach -->
+                                <?php foreach($hotels as $hotel){ ?>
                                 <tr>
                                     <!-- echo recupero il dato dall'array e lo mostro a video -->
-                                    <td><?php echo $hotel['name']; ?></td>
-                                    <td><?php echo $hotel['description']; ?></td>
-                                    <td><?php echo $hotel['parking']; ?></td>
-                                    <td><?php echo $hotel['vote']; ?></td>
-                                    <td><?php echo $hotel['distance_to_center']; ?></td>
+                                    <td class="py-3"><?php echo $hotel['name']; ?></td>
+                                    <td class="py-3"><?php echo $hotel['description']; ?></td>
+                                    <td class="py-3"><?php echo $hotel['parking']; ?></td>
+                                    <td class="py-3"><?php echo $hotel['vote']; ?></td>
+                                    <td class="py-3"><?php echo $hotel['distance_to_center']; ?></td>
                                 </tr>
-                             <?php } ?>
-                         </tbody>
-                    </table>
+                                <?php } ?>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
