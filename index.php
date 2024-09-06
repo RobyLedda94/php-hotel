@@ -44,9 +44,9 @@
     // var_dump($hotels);
     
     // mostro i dati dell'array associativo a video con il ciclo for
-     foreach($hotels as $hotel){
-         var_dump($hotel);
-     }
+    //  foreach($hotels as $hotel){
+    //      var_dump($hotel);
+    //  }
 
 ?>
 
@@ -97,9 +97,9 @@
                                     <!-- echo recupero il dato dall'array e lo mostro a video -->
                                     <td class="py-3"><?php echo $hotel['name']; ?></td>
                                     <td class="py-3"><?php echo $hotel['description']; ?></td>
-                                    <td class="py-3"><?php echo $hotel['parking']; ?></td>
+                                    <td class="py-3"><?php echo $hotel['parking'] ? 'Si' : 'No'; ?></td>
                                     <td class="py-3"><?php echo $hotel['vote']; ?></td>
-                                    <td class="py-3"><?php echo $hotel['distance_to_center']; ?></td>
+                                    <td class="py-3"><?php echo $hotel['distance_to_center']; ?>Km</td>
                                 </tr>
                                 <?php } ?>
                             </tbody>
